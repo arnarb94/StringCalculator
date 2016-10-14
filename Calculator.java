@@ -22,6 +22,12 @@ public class Calculator {
 	}
 
 	private static int sum(String [] numbers) {
+		for(String negative : numbers) {
+			if(toInt(negative) < 0)
+				throw Exception("Negative input!");
+				
+		}
+
 		int total = 0;
 		for(String number : numbers)
 			total += number;
