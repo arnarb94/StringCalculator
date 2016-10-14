@@ -7,6 +7,15 @@ public class CalculatorTest {
 	
 	@Test
 	public void testEmptyString() {
-	assertEquals(0, Calculator.add(""));
+		assertEquals(0, Calculator.add(""));
+	}
+
+	@Test
+	public void testOneNumber() {
+		assertEquals(0, Calculator.add("1"));
+	}
+
+	public void testTwoNumbers() {
+		assertEquals(0, Calculator.add("1,2");
 	}
 }

@@ -2,6 +2,14 @@ package StringCalculator;
 
 public class Calculator {
 	public static int add(String text) {
-		return 0;
+		if(text.equals(""))
+			return 0;
+
+		else if(text.contains(",")) {
+			return sum(splitNumbers(text));
+		}
+
+		else
+			return 1;
 	}
 }
