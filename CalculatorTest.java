@@ -15,7 +15,13 @@ public class CalculatorTest {
 		assertEquals(0, Calculator.add("1"));
 	}
 
+	@Test
 	public void testTwoNumbers() {
 		assertEquals(0, Calculator.add("1,2");
+	}
+
+	@Test
+	public void testMultipleNumbers() {
+		assertEquals(6, Calculator.add("1,2,3");
 	}
 }

@@ -12,4 +12,11 @@ public class Calculator {
 		else
 			return 1;
 	}
+
+	private static int sum(String [] numbers) {
+		int total = 0;
+		for(String number : numbers)
+			total += number;
+		return total;
+	}
 }
