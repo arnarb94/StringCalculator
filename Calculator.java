@@ -29,8 +29,11 @@ public class Calculator {
 		}
 
 		int total = 0;
-		for(String number : numbers)
+		for(String number : numbers) {
+			if(toInt(number) > 1000)
+				continue;
 			total += number;
+		}
 		return total;
 	}
 }

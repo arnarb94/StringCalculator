@@ -29,4 +29,9 @@ public class CalculatorTest {
 	public void negativeNumber() {
 		Calculator("-1);
 	}
+
+	@Test
+	public void numberOver1000() {
+		assertEquals(Calculator.add("500,1,1001"), 501);
+	}
 }
